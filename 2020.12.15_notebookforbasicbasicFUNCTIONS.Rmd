@@ -35,6 +35,10 @@ R.version
 
 # Function Learning for Real this Time
 
+*Videos I used*
+[RichardWebster|Making Functions in R|2015Video](https://www.youtube.com/watch?v=i2VH5jIL76Y&t=24s)
+
+
 
 ```{r 0.0 Libraries, echo=FALSE, results=FALSE, message=FALSE, warning=FALSE}
 #*********************************
@@ -44,6 +48,25 @@ library(dpylr)
 library(ggplot2)
 
 ```
+
+
+![Making Functions](/Users/katherinerovinski/GIT/2020.12.15_FunctionLearning_forrealthistime/MakingFunctionsinR.png)
+
+
+
+1.0 Creating First Example- Circle Math Functions
+```{r 1.0 Creating First Example, echo=FALSE, results=FALSE, message=FALSE, warning=FALSE}
+#*********************************
+## 1.0 Creating First Example
+#********************************* 
+
+
+
+
+
+```
+
+
 
 
 
