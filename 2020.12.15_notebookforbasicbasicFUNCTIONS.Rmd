@@ -54,19 +54,118 @@ library(ggplot2)
 
 
 
-1.0 Creating First Example- Circle Math Functions
+![What is a Function](/Users/katherinerovinski/GIT/2020.12.15_FunctionLearning_forrealthistime/MakingFunctionsinR.1.png)
+
+
+
+![Examples of Base R Functions](/Users/katherinerovinski/GIT/2020.12.15_FunctionLearning_forrealthistime/MakingFunctionsinR.2.png)
+
+
+
+### 1.0 Creating First Example- Circle Math Functions
 ```{r 1.0 Creating First Example, echo=FALSE, results=FALSE, message=FALSE, warning=FALSE}
 #*********************************
-## 1.0 Creating First Example
+## 1.0  Circle Math - Function not created
 #********************************* 
 
+pi*1^2
+# [1] 3.141593
+
+```
 
 
+
+### 1.1 Circle Math Functions
+```{r 1.1 Circle Math Functions, echo=FALSE, results=FALSE, message=FALSE, warning=FALSE}
+#*********************************
+## 1.0  First Example- Circle Math
+#********************************* 
+
+pi*1^2
+# [1] 3.141593
+
+circ.area(1)
 
 
 ```
 
 
+
+![Expected Error Warning](/Users/katherinerovinski/GIT/2020.12.15_FunctionLearning_forrealthistime/MakingFunctionsinR.3.png)
+
+
+
+![General Structure of a Function](/Users/katherinerovinski/GIT/2020.12.15_FunctionLearning_forrealthistime/MakingFunctionsinR.4.png)
+Function_Name user designed/designated - can be anything
+Arguments(s) 1 or more
+Expressions the intermediate steps done in order to have an output
+Return(output) important to specify, less the function will take place but nothing results/displays
+
+
+
+### 1.2 Circle Math Building the Function
+```{r 1.2 Circle Math Building the Function, echo=FALSE, results=FALSE, message=FALSE, warning=FALSE}
+#*********************************
+## 1.2 Circle Math Building the Function
+#********************************* 
+
+pi*1^2
+# [1] 3.141593
+
+#circ.area(1)
+# specify that you want a function with the function named "function"
+#inside this example the argument inside the parentheses is "r" this stands for radius in this exmaple
+# then curly brackets {  }  to define that function
+# give yourself some room and put that ending curly bracket down a line
+
+# Don't forget about the return line!
+# Use the function called "return" - type slow and use the auto-fill option for "return()"
+
+circ.area <- function(r){
+# now come expressions
+Area <-pi*r^2
+return(Area)
+}
+
+circ.area(1)
+
+circ.area(5)
+
+circ.area(435)
+
+
+# [1] 3.141593
+# [1] 3.141593
+# [1] 78.53982
+# [1] 594467.9
+
+```
+
+
+
+### 1.3 Writing the expression in the return function
+```{r 1.3 Writing the expression in the return function, echo=FALSE, results=FALSE, message=FALSE, warning=FALSE}
+#*********************************
+## 1.3 Writing the expression in the return function
+#********************************* 
+
+circ.area <- function(r){
+return(pi*r^2)
+}
+
+circ.area(1)
+
+circ.area(6)
+
+circ.area(860)
+
+
+# Results still works
+# [1] 3.141593
+# [1] 113.0973
+# [1] 2323522
+
+```
 
 
 
