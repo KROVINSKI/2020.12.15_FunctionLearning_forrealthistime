@@ -36,7 +36,7 @@ R.version
 # Function Learning for Real this Time- a bit more complicated
 
 *Videos I used*
-[HefinRhys|Making Functions in R|2015Video](https://www.youtube.com/watch?v=i2VH5jIL76Y&t=24s)
+[HefinRhys|Writing functions in R|2017Video](https://youtu.be/ffPeac3BigM)
 
 
 
@@ -48,3 +48,94 @@ R.version
 # library(ggplot2)
 
 ```
+
+
+# 1.0 Call for Normal Distribution
+```{r 1.0 Call for Normal Distribution, warning=FALSE}
+#*********************************
+## 1.0 Call for Normal Distribution
+#********************************* 
+
+normalDist <- rnorm(1000, 0, 1)
+mean(normalDist)
+hist(normalDist)
+
+nrmDSTplot1 <- hist(normalDist)
+nrmDSTplot1
+
+#if curious about function histogram
+# ?hist
+
+# --- Exploring Histogram Function
+
+# hist(x, ...)
+# Usage for the Funct
+
+#if an argument specified with an = sign it's mandatory supply
+# if an argument has a default value with an equals sign, you the user, don't have to enter it/supply it
+
+
+# hist(x, breaks = "Sturges",
+#      freq = NULL, probability = !freq,
+#      include.lowest = TRUE, right = TRUE,
+#      density = NULL, angle = 45, col = NULL, border = NULL,
+#      main = paste("Histogram of" , xname),
+#      xlim = range(breaks), ylim = NULL,
+#      xlab = xname, ylab,
+#      axes = TRUE, plot = TRUE, labels = FALSE,
+#      nclass = NULL, warn.unused = TRUE, ...)
+
+
+# Exploring a default value 
+# hist(x, breaks = "Sturges",
+
+hist(normalDist, breaks = 50)
+
+nrmDSTplot2 <- hist(normalDist, breaks = 50)
+nrmDSTplot2
+
+```
+
+
+
+
+# 2.0 placeholder
+```{r 2.0 placeholder warning=FALSE}
+#*********************************
+## 1.0 Call for Normal Distribution
+#********************************* 
+
+```
+
+
+
+
+
+# 1.0 Call for Normal Distribution
+```{r 1.0 Call for Normal Distribution, warning=FALSE}
+#*********************************
+## 1.0 Call for Normal Distribution
+#********************************* 
+
+```
+
+
+
+
+# 1.0 Call for Normal Distribution
+```{r 1.0 Call for Normal Distribution, warning=FALSE}
+#*********************************
+## 1.0 Call for Normal Distribution
+#********************************* 
+
+```
+
+```{r}
+#**************E*N*D*************# 
+#*********************************
+## END OF SCRIPT | END OF DOCUMENT 
+#*********************************
+```
+
+
+## END OF SCRIPT | END OF DOCUMENT
