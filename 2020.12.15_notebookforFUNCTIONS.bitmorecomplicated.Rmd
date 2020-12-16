@@ -99,11 +99,64 @@ nrmDSTplot2
 
 
 
-# 2.0 placeholder
-```{r 2.0 placeholder warning=FALSE}
+# 2.0 Hello Function
+```{r 2.0 Hello Function, warning=FALSE}
 #*********************************
-## 1.0 Call for Normal Distribution
+## 2.0 Hello Function
 #********************************* 
+#
+# Functions don't have to take arguments
+# They can return a value whenever they are called 
+
+# # HELLO FUNCTION ' ' ' ' ' ' ' '
+sayhello <- function() {
+"hello"
+  }
+  # we have created a function that needs no arguments
+
+sayhello
+
+sayhello()
+
+```
+
+
+# 3.0 Hello Function- with outputs
+```{r 3.0 Hello Function- with outputs, warning=FALSE}
+#*********************************
+## 3.0 Hello Function- with outputs
+#********************************* 
+#
+
+# # Saying HELLO FUNCTION ' ' ' ' '
+sayinghello <- function(name){
+  paste("hello", name)
+}
+
+greet <- sayinghello("Kate")
+# call the greet object
+greet
+
+
+
+```
+
+
+
+# 4.0 Function with Special Arguments 
+```{r 4.0 Function with Special Arguments, warning=FALSE}
+#*********************************
+##  4.0 Function with Special Arguments
+#********************************* 
+
+expo <- function(x, power = 2) {
+  hist(x^power)
+}
+  
+# the power = 2 tells r that this is an optional argument 
+
+
+expo(normalDist)
 
 ```
 
@@ -111,24 +164,20 @@ nrmDSTplot2
 
 
 
-# 1.0 Call for Normal Distribution
-```{r 1.0 Call for Normal Distribution, warning=FALSE}
-#*********************************
-## 1.0 Call for Normal Distribution
-#********************************* 
-
-```
 
 
 
 
-# 1.0 Call for Normal Distribution
-```{r 1.0 Call for Normal Distribution, warning=FALSE}
-#*********************************
-## 1.0 Call for Normal Distribution
-#********************************* 
 
-```
+
+
+
+
+
+
+
+
+
 
 ```{r}
 #**************E*N*D*************# 
